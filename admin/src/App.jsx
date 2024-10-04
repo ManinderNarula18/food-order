@@ -11,7 +11,7 @@ import Edit from './pages/Edit/Edit'
 
 const App = () => {
 
-  const url = "http://localhost:4000";
+  const url = "https://food-order-7izq.onrender.com";
 
   return (
     <div>
