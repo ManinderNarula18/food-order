@@ -3,8 +3,8 @@ import mongoose from 'mongoose';
 export const connectDB = async () => {
     
     try {
-        await mongoose.connect('mongodb+srv://manindertechnext5:QOl0xpwlzgHMdNny@cluster0.j1b0o.mongodb.net/food-del', {
-        });
+        await mongoose.connect('mongodb+srv://manindersnarula:QNjxdiRKK3yU9KIz@foodonline.zhls3io.mongodb.net/?retryWrites=true&w=majority&appName=FoodOnline', {
+        }); 
         console.log("MongoDB connected successfully");
     } catch (error) {
         console.error("MongoDB connection failed:", error);
