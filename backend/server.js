@@ -40,4 +40,8 @@ app.listen(port,()=>{
 //  QOl0xpwlzgHMdNny
 
 
+// manindersnarula
+// QNjxdiRKK3yU9KIz
+
+// mongodb+srv://manindersnarula:<db_password>@foodonline.zhls3io.mongodb.net/?retryWrites=true&w=majority&appName=FoodOnline
 // mongodb+srv://manindertechnext5:<db_password>@cluster0.j1b0o.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
