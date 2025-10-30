@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 const Edit = ({ url }) => {
     const { id } = useParams();
     const navigate = useNavigate();
-    const [data, setData] = useState({ name: '', description: '', price: '', saleprice: '', category: '', image: null });
+    const [data, setData] = useState({ name: '', description: '', price: '', saleprice: '', category: '', image: '' });
     const [loading, setLoading] = useState(true);
     const [updating, setUpdating] = useState(false);
 
@@ -114,7 +114,7 @@ const Edit = ({ url }) => {
                 <div className="add-category-price">
                     <div className="add-category flex-col">
                         <p>Product Category</p>
-                        <select onChange={onChangeHandler} name='category'>
+                        <select onChange={onChangeHandler} value={data.category} name='category'>
                             <option value='Salad'>Salad</option>
                             <option value='Rolls'>Rolls</option>
                             <option value='Deserts'>Deserts</option>
