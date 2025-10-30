@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 const Edit = ({ url }) => {
     const { id } = useParams();
     const navigate = useNavigate();
-    const [data, setData] = useState({ name: '', description: '', price: '', saleprice: '', category: 'Salad', image: null });
+    const [data, setData] = useState({ name: '', description: '', price: '', saleprice: '', category: '', image: null });
     const [loading, setLoading] = useState(true);
     const [updating, setUpdating] = useState(false);
 
