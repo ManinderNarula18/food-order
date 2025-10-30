@@ -127,11 +127,11 @@ const Edit = ({ url }) => {
                     </div>
                     <div className="add-price flex-col">
                         <p>Product Price</p>
-                        <input onChange={onChangeHandler} value={data.price} type='Number' name='price' placeholder='$20' />
+                        <input onChange={onChangeHandler} value={data.price} type='Number' name='price' placeholder='$' />
                     </div>
                     <div className="add-price flex-col">
                         <p>Product Sale Price</p>
-                        <input onChange={onChangeHandler} value={data.saleprice} type='Number' name='saleprice' placeholder='$20' />
+                        <input onChange={onChangeHandler} value={data.saleprice} type='Number' name='saleprice' placeholder='$' />
                     </div>
                 </div>
                 <button className='add-btn' type='submit' disabled={updating}>
