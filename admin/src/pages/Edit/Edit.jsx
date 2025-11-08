@@ -4,12 +4,13 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 const Edit = ({ url }) => {
+     const [image,setImage] = useState(null);
     const { id } = useParams();
     const navigate = useNavigate();
     const [data, setData] = useState({ name: '', description: '', price: '', saleprice: '', category: '', image: '' });
     const [loading, setLoading] = useState(true);
     const [updating, setUpdating] = useState(false);
-     const [image,setImage] = useState(null);
+    
 
     useEffect(() => {
         const fetchFood = async () => {
