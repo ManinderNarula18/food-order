@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { assets } from '../../assets/assets'
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -7,7 +8,7 @@ const Edit = ({ url }) => {
      const [image,setImage] = useState(null);
     const { id } = useParams();
     const navigate = useNavigate();
-    const [data, setData] = useState({ name: '', description: '', price: '', saleprice: '', category: '', image: '' });
+    const [data, setData] = useState({ name: '', description: '', price: '', saleprice: '', category: ''});
     const [loading, setLoading] = useState(true);
     const [updating, setUpdating] = useState(false);
     
@@ -56,10 +57,10 @@ const Edit = ({ url }) => {
         formData.append('price', Number(data.price));
         formData.append('saleprice', Number(data.saleprice));
         formData.append('category', data.category);
-        if (data.image) {
-            formData.append('image', data.image);
+        if (image) {
+            formData.append('image', image);
         }
-
+         
         setUpdating(true);
         try {
             const response = await axios.put(`${url}/api/food/update/${id}`, formData);
