@@ -9,6 +9,7 @@ const Edit = ({ url }) => {
     const [data, setData] = useState({ name: '', description: '', price: '', saleprice: '', category: '', image: '' });
     const [loading, setLoading] = useState(true);
     const [updating, setUpdating] = useState(false);
+     const [image,setImage] = useState(null);
 
     useEffect(() => {
         const fetchFood = async () => {
